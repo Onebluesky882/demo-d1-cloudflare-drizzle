@@ -1,0 +1,13 @@
+{
+  "name": "demo-sqlite-d1-drizzle",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-09-26",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "demo-sqlite-d1-drizzle",
+      "database_id": "b052f394-230a-45f8-9a45-4588555f719e"
+    }
+  ]
+}
