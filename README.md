@@ -45,7 +45,7 @@ demo-d1-cloudflare-drizzle/
 ### 1. Clone และติดตั้ง dependencies
 
 ```bash
-git clone https://github.com/yourname/demo-d1-cloudflare-drizzle
+git clone git@github.com:Onebluesky882/demo-d1-cloudflare-drizzle.git
 cd demo-d1-cloudflare-drizzle
 bun install
 ```
