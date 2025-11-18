@@ -24,21 +24,38 @@
 
 ## 📁 Project Structure
 
-demo-d1-cloudflare-drizzle/
-├─ src/
-│ ├─ index.ts # Main Hono app
-│ └─ posts/
-│ ├─ schema.ts # Drizzle schema
-│ └─ service.ts # CRUD logic
-│
-├─ drizzle/
-│ └─ migrations/ # Drizzle migrations
-│
-├─ package.json
-├─ wrangler.toml
-└─ README.md
-
----
+```html
+<h2>📁 Project Structure</h2>
+<ul>
+  <li>
+    <strong>demo-d1-cloudflare-drizzle/</strong>
+    <ul>
+      <li>
+        <strong>src/</strong>
+        <ul>
+          <li><code>index.ts</code> — Main Hono app</li>
+          <li>
+            <strong>posts/</strong>
+            <ul>
+              <li><code>schema.ts</code> — Drizzle schema</li>
+              <li><code>service.ts</code> — CRUD logic</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>drizzle/</strong>
+        <ul>
+          <li><strong>migrations/</strong> — Drizzle migrations</li>
+        </ul>
+      </li>
+      <li><code>package.json</code></li>
+      <li><code>wrangler.toml</code></li>
+      <li><code>README.md</code></li>
+    </ul>
+  </li>
+</ul>
+```
 
 ## ⚙️ การติดตั้ง
 
