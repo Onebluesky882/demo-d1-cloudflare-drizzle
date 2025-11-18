@@ -22,20 +22,21 @@
 
 ---
 
-## 📁 โครงสร้างโปรเจกต์
+## 📁 Project Structure
 
-src/
-├── index.ts # main Hono app
-└── posts/
-├── schema.ts # drizzle schema
-└── service.ts # CRUD logic
-
-drizzle/
-└── migrations/ # drizzle migrations
-
-package.json
-wrangler.toml
-README.md
+demo-d1-cloudflare-drizzle/
+├─ src/
+│ ├─ index.ts # Main Hono app
+│ └─ posts/
+│ ├─ schema.ts # Drizzle schema
+│ └─ service.ts # CRUD logic
+│
+├─ drizzle/
+│ └─ migrations/ # Drizzle migrations
+│
+├─ package.json
+├─ wrangler.toml
+└─ README.md
 
 ---
 
@@ -47,4 +48,30 @@ README.md
 git clone https://github.com/yourname/demo-d1-cloudflare-drizzle
 cd demo-d1-cloudflare-drizzle
 bun install
+```
+
+## package.json
+
+```json
+{
+  "name": "demo-sqlite-d1-drizzle",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20251118.0",
+    "@libsql/client": "^0.15.15",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "hono": "^4.10.6"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.7",
+    "tsx": "^4.20.6",
+    "wrangler": "^4.4.0"
+  }
+}
 ```
