@@ -1,0 +1,14 @@
+name = "demo-sqlite-d1-drizzle"
+main = "src/index.ts"
+compatibility_date = "2024-09-26"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "demo-sqlite-d1-drizzle"
+database_id = "4cf86a44-fee9-4411-87b9-f8e0e1f61567"
+migrations_dir = "migrations"
+
+[vars]
+Allow_url01='http://localhost:8787/'
+Allow_url02='https://demo-sqlite-d1-drizzle.thaimongkon777.workers.dev'

@@ -39,10 +39,10 @@ export const newPost = async (c: context) => {
     content: body.content,
   };
   try {
-    const result = await db.insert(posts).values(filed).returning();
+    const insertResult = await db.insert(posts).values(filed).run();
     return c.json({
       success: true,
-      data: result,
+      data: insertResult,
     });
   } catch (error) {
     throw new HTTPException(400, {
